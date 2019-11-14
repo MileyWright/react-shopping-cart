@@ -1,6 +1,6 @@
  
  
- [Deployed Site](miley-react-shopping-cart.netlify.com)
+[Deployed Site](https://miley-react-shopping-cart.netlify.com)
 
 # Module Project: Context API - Shopping Cart
 

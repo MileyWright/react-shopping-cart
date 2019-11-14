@@ -8,9 +8,9 @@ import Products from './components/Products';
 import ShoppingCart from './components/ShoppingCart';
 
 //Context
-import ProductContext from './contexts/ProductContext';
+import {ProductContext} from './contexts/ProductContext';
 	//now that we created our ProductContext we can provide data across our app
-import CartContext from './contexts/CartContext';
+import {CartContext} from './contexts/CartContext';
 	// we can now provide data across our app
 
 function App() {
@@ -41,18 +41,11 @@ function App() {
 					{/* Routes */}
 					<Route
 						exact
-						path="/"
-						render={() => (
-							<Products
-								products={products}
-								addItem={addItem}
-							/>
-						)}
+						path="/" component={Products}
 					/>
 
 					<Route
-						path="/cart"
-						render={() => <ShoppingCart cart={cart} />}
+						path="/cart" component= {ShoppingCart}
 					/>
 				</div>
 			</CartContext.Provider>
